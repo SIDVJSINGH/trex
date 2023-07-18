@@ -1,7 +1,7 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 
-var score = 0;
+let score = 0;
 
 function jump() {
   if (dino.classList != "jump") {
@@ -10,7 +10,7 @@ function jump() {
     setTimeout(function () {
       dino.classList.remove("jump");
     }, 500);
-    score = score + 1 + score;
+    score += 2;
   }
 }
 
