@@ -10,7 +10,7 @@ function jump() {
     setTimeout(function () {
       dino.classList.remove("jump");
     }, 500);
-    score = score + 1 + score * 2;
+    score = score + 1 + score;
   }
 }
 
