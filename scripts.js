@@ -13,7 +13,7 @@ function jump() {
 
         setTimeout(function() {
             dino.classList.remove("jump");
-        }, 450);
+        }, 550);
         score += 2;
     }
 }
