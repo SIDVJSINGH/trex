@@ -45,7 +45,7 @@ let isAlive = setInterval(function() {
     if (cactusLeft <= 65 && cactusLeft > -20 && dinoTop >= 0) {
         // collision
         // window.console.log("collision");
-        // alert("Game Over! Your Score is: " + score);
+        alert("Game Over! Your Score is: " + score);
         score = 0;
     }
 }, 10);
