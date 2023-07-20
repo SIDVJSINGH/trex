@@ -10,16 +10,17 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         alert("Click Ok to Start");
     </script>
-    <br /><br />
+    <br /><br /> -->
+    <div class="score_now">
+        <div>
+            <p id="score">00</p>
+            <span>Score</span>
+        </div>
+    </div>
     <div class="game">
-        <!-- TODO SCORE Updation -->
-        <!-- <div style="text-align: right">
-        <img src="img/sun.png" width="81.50px" height="61.2px" />
-      </div> -->
-
         <div id="sun"></div>
         <div id="slow_cloud"></div>
         <div id="fast_cloud"></div>
@@ -29,7 +30,7 @@
     </div>
     <script src="scripts.js"></script>
     <div style="text-align: center">
-        <br /><br /><button onclick="jump()">JUMP</button>
+        <br /><br /><button onclick="jump()" class="btn">JUMP</button>
     </div>
 </body>
 
