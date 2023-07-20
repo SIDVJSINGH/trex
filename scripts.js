@@ -6,6 +6,9 @@ const cactus = document.getElementById("cactus");
 // }, 100);
 
 let score = 0;
+score = setInterval(function() {
+    score++;
+}, 100);
 
 function jump() {
     if (dino.classList != "jump") {
@@ -14,21 +17,20 @@ function jump() {
         setTimeout(function() {
             dino.classList.remove("jump");
         }, 550);
-        score += 2;
     }
 }
 
-var score_now = setInterval(function() {
-    var now = score;
-    document.getElementById("score").innerHTML = now;
-}, 500);
+let score_now = setInterval(function() {
+    window.now = score;
+    document.getElementById("score").innerHTML = window.now;
+}, 10);
 
-var game_over = setInterval(function() {
+let game_over = setInterval(function() {
     if (score >= 100) {
         alert("Level Completed " + score);
         score = 0;
     }
-}, 2500);
+}, 100);
 
 let isAlive = setInterval(function() {
     // get current dino Y position
@@ -45,7 +47,7 @@ let isAlive = setInterval(function() {
     if (cactusLeft <= 65 && cactusLeft > -20 && dinoTop >= 0) {
         // collision
         // window.console.log("collision");
-        alert("Game Over! Your Score is: " + score);
+        alert("Game Over! Your Score is: " + window.now);
         score = 0;
     }
 }, 10);
